@@ -1,10 +1,10 @@
 package com.base.baseapi.api
 
-//@SpringBootTest
-//class BaseApiApplicationTests {
+// @SpringBootTest
+// class BaseApiApplicationTests {
 //
-//	@Test
-//	fun contextLoads() {
-//	}
+// 	@Test
+// 	fun contextLoads() {
+// 	}
 //
-//}
+// }

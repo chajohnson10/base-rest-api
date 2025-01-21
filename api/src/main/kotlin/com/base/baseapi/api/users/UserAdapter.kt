@@ -9,7 +9,7 @@ internal class UserAdapter(
 ) {
     suspend fun get(): List<User> = usersApi.get().map { it.toResponse() }
 
-    suspend fun save(users: List<User>): List<User> = usersApi.save(users.map{it.toDomain()}).map { it.toResponse() }
+    suspend fun save(users: List<User>): List<User> = usersApi.save(users.map { it.toDomain() }).map { it.toResponse() }
 
     suspend fun delete(ids: List<Long>): String = usersApi.delete(ids)
 }

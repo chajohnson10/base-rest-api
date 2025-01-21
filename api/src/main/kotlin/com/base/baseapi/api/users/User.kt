@@ -8,7 +8,7 @@ import com.base.baseapi.domain.users.User as UserDomain
 data class User(
     val id: Long? = null,
     val name: String,
-    val role: Role,
+    val role: Role
 )
 
 internal fun UserDomain.toResponse(): User =

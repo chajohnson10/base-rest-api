@@ -6,3 +6,9 @@ enum class Role {
     MOD,
     USER
 }
+
+enum class Status {
+    NEW,
+    UPDATE,
+    DELETE
+}

@@ -6,10 +6,10 @@ import org.springframework.stereotype.Service
 @Service
 class UsersApiImpl(
     private val usersDatabaseOperation: UsersDatabaseOperation
-): UsersApi {
+) : UsersApi {
     override suspend fun get(): List<User> {
         return listOf(User(123L, "userName", Role.USER))
-        //return usersDatabaseOperation.get()
+        // return usersDatabaseOperation.get()
     }
 
     override suspend fun save(users: List<User>): List<User> {

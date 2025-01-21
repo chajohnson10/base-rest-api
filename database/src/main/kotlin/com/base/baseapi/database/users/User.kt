@@ -8,12 +8,12 @@ import jakarta.persistence.Table
 import com.base.baseapi.domain.users.User as UserDomain
 
 @Entity
-@Table(name="users")
+@Table(name = "users")
 data class User(
     @Id @GeneratedValue
     val id: Long? = null,
     val name: String,
-    val role: Role,
+    val role: Role
 )
 
 internal fun User.toDomain(): UserDomain =
